@@ -14,13 +14,10 @@ const  createPagination = (totalPages, page) => {
     }
 
     if(page > 2) {
-        liTag += `<li class = "first numb"
-            onclick = "createPagination(totalPages,1 )">
-            <span>1</span>
-         </li>`
+        liTag += `<li class="first numb" onclick="createPagination(totalPages, 1)"><span>1</span></li>`
         
         if(page > 3){
-            liTag += `<li class = "dots"><span>...</span></li>`
+            liTag += `<li class="dots"><span>...</span></li>`
         }
     }
 
@@ -49,25 +46,17 @@ const  createPagination = (totalPages, page) => {
         else {
             active = ''
         }
-        liTag  +=  `<li class = 'numb ${active}'
-            onclick = 'createPagination(totalPages, ${plength})'
-        >
-            <span>${plength}</span>
-        </li>`
+        liTag  +=  `<li class="numb ${active}" onclick="createPagination(totalPages, ${plength})"><span>${plength}</span></li>`
     }
     if(page < totalPages - 1){
         if(page < totalPages - 2){
-            liTag += `<li class = 'dots'><span>...</span></li>`
+            liTag += `<li class="dots"><span>...</span></li>`
         }
-        liTag += `<li class = 'last numb' onclick = 'createPagination(totalPages, ${totalPages})'>
-            <span>${totalPages} </span>
-        </li>`
+        liTag +=`<li class="last numb" onclick="createPagination(totalPages, ${totalPages})"><span>${totalPages}</span></li>`
     }
 
     if (page < totalPages) {
-        liTag += `<li class = 'btn next' onclick = 'createPagination(totalPages,${page + 1})'>
-            <span>Next <i class = 'fas fa-angle-right'></i></span>
-        </li>`
+        liTag += `<li class="btn next" onclick="createPagination(totalPages, ${page + 1})"><span>Next <i class="fas fa-angle-right"></i></span></li>`
     }
     element.innerHTML = liTag;
     return liTag;
