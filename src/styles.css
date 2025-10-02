@@ -46,3 +46,11 @@ body {
     line-height: 45px;
     border-radius: 50%;
 }
+
+.pagination ul li.numb.first {
+    margin: 0 3px 0 -5px;
+}
+
+.pagination ul li.numb.last {
+    margin: 0 -5px 0 3px;
+}
