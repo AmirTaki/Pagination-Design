@@ -28,6 +28,9 @@ const  createPagination = (totalPages, page) => {
     if(page == totalPages){
         beforePage = beforePage - 2;
     }
+    else if (page == totalPages - 1){
+        beforePage = beforePage - 1
+    } 
 
   
 }
