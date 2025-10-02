@@ -60,6 +60,7 @@ const  createPagination = (totalPages, page) => {
         if(page < totalPages - 2){
             liTag += `<li class = 'dots'><span>...</span></li>`
         }
+        liTag += `<li class = 'last numb' onclick = 'createPagination(totalPages, ${totalPages})'></li>`
     }
 
   
