@@ -50,6 +50,11 @@ const  createPagination = (totalPages, page) => {
         else {
             active = ''
         }
+        li +=  `<li class = 'numb ${active}'
+            onclick = 'createPagination(totalPages, ${plength})'
+        >
+            <span>${plength}</span>
+        </li>`
     }
 
   
