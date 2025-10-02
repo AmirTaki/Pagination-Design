@@ -58,7 +58,7 @@ const  createPagination = (totalPages, page) => {
     }
     if(page < totalPages - 1){
         if(page < totalPages - 2){
-            
+            liTag += `<li class = 'dots'><span>...</span></li>`
         }
     }
 
