@@ -25,3 +25,15 @@ body {
     border-radius: 50px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
 }
+
+.pagination ul li {
+    color: #20B2AA;
+    list-style : none;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition: all .3s ease;
+}
