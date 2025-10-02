@@ -44,6 +44,12 @@ const  createPagination = (totalPages, page) => {
         if (plength > totalPages){
             continue;
         }
+        if(plength == 0){
+            active = 'active'
+        }
+        else {
+            active = ''
+        }
     }
 
   
