@@ -13,6 +13,13 @@ const  createPagination = (totalPages, page) => {
         liTag += `<li class = 'btn prev' onclick = "createPagination(totalPages, ${page - 1})">
         <span><i class = 'fas fa-angle-left'></i>prev</span> </li>` 
     }
+
+    if(page > 2) {
+        liTag += `<li class = "first numb"
+            onclick = "createPagination(totalPages,1 )">
+            <span>1</span>
+         </li>`
+    }
 }
 
 element.innerHTML = createPagination (totalPages, page);
