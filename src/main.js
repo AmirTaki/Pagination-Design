@@ -66,7 +66,9 @@ const  createPagination = (totalPages, page) => {
     }
 
     if (page < totalPages) {
-        liTag += `<li class = 'btn next' onclick = 'createPagination(totalPages,${page + 1})'></li>`
+        liTag += `<li class = 'btn next' onclick = 'createPagination(totalPages,${page + 1})'>
+            <span>Next <i class = 'fas fa-angle-right'></i></span>
+        </li>`
     }
 
   
