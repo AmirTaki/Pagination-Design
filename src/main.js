@@ -10,8 +10,7 @@ const  createPagination = (totalPages, page) => {
     let beforePage = page - 1;
     let afterPag = page + 1;
     if (page > 1){
-        liTag += `<li class = 'btn prev' onclick = "createPagination(totalPages, ${page - 1})">
-        <span><i class = 'fas fa-angle-left'></i>prev</span> </li>` 
+        liTag += `<li class="btn prev" onclick="createPagination(totalPages, ${page - 1})"><span><i class="fas fa-angle-left"></i> Prev</span></li>` 
     }
 
     if(page > 2) {
