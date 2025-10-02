@@ -20,6 +20,10 @@ const  createPagination = (totalPages, page) => {
             <span>1</span>
          </li>`
     }
+
+    if(page > 3){
+        liTag += `<li class = "dots"><span>...</span></li>`
+    }
 }
 
 element.innerHTML = createPagination (totalPages, page);
