@@ -40,11 +40,14 @@ const  createPagination = (totalPages, page) => {
         if (plength > totalPages){
             continue;
         }
-        if(plength == 0){
+        if (plength == 0) { //if plength is 0 than add +1 in plength value
+            plength = plength + 1;
+        }
+        if(page = plength){
             active = 'active'
         }
         else {
-            active = ''
+            active = '';
         }
         liTag  +=  `<li class="numb ${active}" onclick="createPagination(totalPages, ${plength})"><span>${plength}</span></li>`
     }
