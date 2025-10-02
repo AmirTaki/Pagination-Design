@@ -40,6 +40,12 @@ const  createPagination = (totalPages, page) => {
         afterPag = afterPag + 1;
     }
 
+    for (var plength = beforePage; plength <= afterPag ; plength ++){
+        if (plength > totalPages){
+            continue;
+        }
+    }
+
   
 }
 
