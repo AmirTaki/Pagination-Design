@@ -2,7 +2,6 @@ const element = document.querySelector(".pagination ul");
 let totalPages = 20;
 let page = 10;
 
-element.innerHTML = createPagination(totalPages, page);
 const  createPagination = (totalPages, page) => {
     let liTag = '';
     let active;
@@ -15,20 +14,20 @@ const  createPagination = (totalPages, page) => {
     if(page > 2){
         liTag += `<li class="first numb" onclick="createPagination(totalPages, 1)"><span>1</span></li>`;
         if(page > 3){ 
-        liTag += `<li class="dots"><span>...</span></li>`;
+            liTag += `<li class="dots"><span>...</span></li>`;
         }
     }
-
+    
     if (page == totalPages) {
         beforePage = beforePage - 2;
-    
+        
     } else if (page == totalPages - 1) {
         beforePage = beforePage - 1;
     }
-
+    
     if (page == 1) {
         afterPage = afterPage + 2;
-    
+        
     } else if (page == 2) {
         afterPage  = afterPage + 1;
     }
@@ -49,7 +48,7 @@ const  createPagination = (totalPages, page) => {
         }
         liTag += `<li class="numb ${active}" onclick="createPagination(totalPages, ${plength})"><span>${plength}</span></li>`;
     }
-
+    
     if(page < totalPages - 1){ 
         if(page < totalPages - 2){ 
             liTag += `<li class="dots"><span>...</span></li>`;
@@ -62,3 +61,4 @@ const  createPagination = (totalPages, page) => {
     element.innerHTML = liTag; 
     return liTag;
 }
+element.innerHTML = createPagination(totalPages, page);
