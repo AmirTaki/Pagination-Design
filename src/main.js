@@ -56,6 +56,11 @@ const  createPagination = (totalPages, page) => {
             <span>${plength}</span>
         </li>`
     }
+    if(page < totalPages - 1){
+        if(page < totalPages - 2){
+            
+        }
+    }
 
   
 }
