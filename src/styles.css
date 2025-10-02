@@ -37,3 +37,12 @@ body {
     user-select: none;
     transition: all .3s ease;
 }
+
+.pagination ul li.numb {
+    list-style: none;
+    height: 45px;
+    width: 45px;
+    margin: 0 3px;
+    line-height: 45px;
+    border-radius: 50%;
+}
