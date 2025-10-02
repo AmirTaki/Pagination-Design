@@ -54,3 +54,8 @@ body {
 .pagination ul li.numb.last {
     margin: 0 -5px 0 3px;
 }
+
+.pagination ul li.dots {
+    font-size: 22px;
+    cursor:default;
+}
