@@ -70,8 +70,8 @@ const  createPagination = (totalPages, page) => {
             <span>Next <i class = 'fas fa-angle-right'></i></span>
         </li>`
     }
-
-  
+    element.innerHTML = liTag;
+    return liTag;
 }
 
 element.innerHTML = createPagination (totalPages, page);
