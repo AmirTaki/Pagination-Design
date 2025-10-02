@@ -19,11 +19,13 @@ const  createPagination = (totalPages, page) => {
             onclick = "createPagination(totalPages,1 )">
             <span>1</span>
          </li>`
+        
+        if(page > 3){
+            liTag += `<li class = "dots"><span>...</span></li>`
+        }
     }
 
-    if(page > 3){
-        liTag += `<li class = "dots"><span>...</span></li>`
-    }
+  
 }
 
 element.innerHTML = createPagination (totalPages, page);
