@@ -59,3 +59,8 @@ body {
     font-size: 22px;
     cursor:default;
 }
+
+.pagination ul li.btn {
+    padding: 0 20px;
+    border-radius: 50px;
+}
